@@ -24,7 +24,7 @@ public class MedianCalculation {
     }
 
     private static void printMid() {
-        for (int i = 0; i < mid.length; i++) {
+        for(int i = 0; i < mid.length; i++) {
             System.out.print(mid[i] + " ");
         }
     }
@@ -41,7 +41,7 @@ public class MedianCalculation {
     }
 
     private static boolean isIndexOdd(int i) {
-        if ((i + 1) % 2 == 1) {
+        if((i + 1) % 2 == 1) {
             return true;
         }
         return false;
