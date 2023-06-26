@@ -1,4 +1,4 @@
-package codetree.ObjectSorting;
+package codetree.objectSorting;
 
 import java.util.Arrays;
 import java.util.Comparator;

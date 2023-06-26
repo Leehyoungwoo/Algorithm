@@ -1,23 +1,23 @@
-package codetree.ObjectSorting;
+package codetree.objectSorting;
 
 import java.util.*;
 
-public class LineUp2 {
+public class LineUp {
+
+    private static int n;
+    private static Student[] students;
 
     static class Student {
         int height;
         int weight;
-        int idx;
+        int num;
 
-        public Student(int height, int weight, int idx) {
+        public Student(int height, int weight, int num) {
             this.height = height;
             this.weight = weight;
-            this.idx = idx;
+            this.num = num;
         }
     }
-
-    private static int n;
-    private static Student[] students;
 
     public static void main(String[] args) {
         init();
@@ -25,9 +25,12 @@ public class LineUp2 {
             @Override
             public int compare(Student a, Student b) {
                 if (a.height == b.height) {
+                    if (a.weight == b.weight) {
+                        return a.num - b.num;
+                    }
                     return b.weight - a.weight;
                 }
-                return a.height - b.height;
+                return b.height - a.height;
             }
         });
         printAll();
@@ -37,8 +40,7 @@ public class LineUp2 {
         for (int i = 0; i < n; i++) {
             System.out.println(students[i].height + " "
                     + students[i].weight + " "
-                    + students[i].idx);
-
+                    + students[i].num);
         }
     }
 
@@ -53,4 +55,5 @@ public class LineUp2 {
             students[i] = new Student(height, weight, i + 1);
         }
     }
+
 }

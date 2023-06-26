@@ -1,4 +1,4 @@
-package codetree.simulatiom1;
+package codetree.simulation1;
 
 import java.util.*;
 
