@@ -16,9 +16,9 @@ public class FindTheDay {
     }
 
     private static void printWeakDay() {
-        int idx = gap & 7 + 1;
-        if(idx > 6) {
-            idx-= 6;
+        int idx = ((gap % 7) +1) % 7;
+        if (gap < 0) {
+            idx = ((gap + 7) % 7 + 1) % 7;
         }
         System.out.println(weekDay[idx]);
     }
