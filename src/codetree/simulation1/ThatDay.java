@@ -4,9 +4,9 @@ import java.util.*;
 
 public class ThatDay {
 
-    private static int m1,d1,m2,d2;
+    private static int m1, d1, m2, d2;
     private static int[] monthByDays = {0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-    private static String[] weekDay = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat" , "Sum"};
+    private static String[] weekDay = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
     private static String thatDay;
 
 
@@ -19,18 +19,36 @@ public class ThatDay {
     }
 
     private static int dayCount(int gap) {
-        return 0;
+        int cnt = gap / 7;
+
+        if (gap % 7 >= idxOfArr()) {
+            cnt++;
+        }
+
+        return cnt;
+    }
+
+    private static int idxOfArr() {
+        for (int i = 0; i < 7; i++) {
+            if (weekDay[i].equals(thatDay)) {
+                return i;
+            }
+        }
+
+        return -1;
     }
 
     private static int calculateDay() {
         int sum1 = d1;
-        for(int i = 1; i < m1; i++) {
+        for (int i = 1; i < m1; i++) {
             sum1 += monthByDays[i];
         }
+
         int sum2 = d2;
-        for(int i = 1; i < m2; i++) {
+        for (int i = 1; i < m2; i++) {
             sum2 += monthByDays[i];
         }
+
         return sum2 - sum1;
     }
 
