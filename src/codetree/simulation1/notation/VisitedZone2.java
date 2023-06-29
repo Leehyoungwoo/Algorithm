@@ -1,4 +1,4 @@
-package codetree.notation;
+package codetree.simulation1.notation;
 
 import java.io.BufferedReader;
 import java.io.IOException;
