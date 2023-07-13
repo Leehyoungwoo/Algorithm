@@ -15,7 +15,7 @@ public class SumCloseToSpecificNumber {
 
     private static int findSNum() {
         int sum = totalSum();
-        int min = 10_000;
+        int min = Integer.MAX_VALUE;
 
         for (int i = 0; i < nums.length - 1; i++) {
             for (int j = i + 1; j < nums.length; j++) {
