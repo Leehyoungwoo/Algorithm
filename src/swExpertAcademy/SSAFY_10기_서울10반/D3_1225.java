@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class D3_0804 {
+public class D3_1225 {
 
     private static Queue<Integer> password = new LinkedList<>();
     private static final int TEST_CASE = 10;
