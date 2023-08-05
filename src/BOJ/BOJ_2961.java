@@ -35,9 +35,9 @@ public class BOJ_2961 {
         taste = new int[2][N];
 
         for (int i = 0; i < N; i++) {
-            StringTokenizer underSt = new StringTokenizer(br.readLine());
-            taste[0][i] = Integer.parseInt(underSt.nextToken());
-            taste[1][i] = Integer.parseInt(underSt.nextToken());
+            StringTokenizer st1 = new StringTokenizer(br.readLine());
+            taste[0][i] = Integer.parseInt(st1.nextToken());
+            taste[1][i] = Integer.parseInt(st1.nextToken());
         }
     }
 }
