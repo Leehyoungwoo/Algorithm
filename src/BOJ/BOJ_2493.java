@@ -37,7 +37,7 @@ public class BOJ_2493 {
             }
 
             while (true) {
-                if (stack.isEmpty()) { //
+                if (stack.isEmpty()) {
                     sb.append("0 ");
                     stack.push(tower);
                     break;
