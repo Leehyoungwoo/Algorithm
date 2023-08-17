@@ -33,7 +33,6 @@ public class BOJ_1758 {
         return sum;
     }
 
-
     private static void init() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         N = Integer.parseInt(br.readLine());
