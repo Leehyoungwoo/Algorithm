@@ -68,7 +68,7 @@ public class SWEA_1767 {
 
         for (int i = 0; i < 4; i++) {
             if(canConnect(cores.get(idx), i)) {
-                fill(cores.get(idx), i, 2);
+                fill(cores.get(idx), i, WIRE);
                 findAnswer(idx + 1, core + 1, wire + wireCnt);
                 fill(cores.get(idx), i, 0);
             }
