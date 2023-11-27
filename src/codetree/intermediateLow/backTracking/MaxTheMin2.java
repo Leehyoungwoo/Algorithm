@@ -1,7 +1,9 @@
+package codetree.intermediateLow.backTracking;
+
 import java.io.*;
 import java.util.*;
 
-public class MaxTheMin {
+public class MaxTheMin2 {
 
 	private static int n;
 	private static int[][] map;
