@@ -1,4 +1,4 @@
-package codetree.backTracking;
+package codetree.intermediateLow.backTracking;
 
 import java.util.*;
 import java.io.*;

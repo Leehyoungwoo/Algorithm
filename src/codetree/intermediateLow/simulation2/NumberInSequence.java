@@ -1,4 +1,4 @@
-package codetree.simulation2;
+package codetree.intermediateLow.simulation2;
 import java.util.Scanner;
 
 public class NumberInSequence {
