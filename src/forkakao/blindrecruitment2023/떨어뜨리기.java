@@ -23,6 +23,7 @@ public class 떨어뜨리기 {
     }
 }
 class Solution7 {
+    // 아직 못품
     public int[] solution(int[][] edges, int[] target) {
         int[] answer = {};
         return answer;
