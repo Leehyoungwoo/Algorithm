@@ -36,6 +36,7 @@ class Solution4 {
             lionInfo[10] += leftArrow;
             compareScore(lionInfo, apeachInfo);
             // 되돌리기
+            // 리턴하고 이전 재귀로 돌아갔는데 lionInfo가 바뀌면 안되니까
             lionInfo[10] -= leftArrow;
             return;
         }
