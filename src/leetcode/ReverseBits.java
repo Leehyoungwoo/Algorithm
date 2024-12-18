@@ -4,7 +4,7 @@ public class ReverseBits {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.reverseBits(00000010100101000001111010011100));
+//        System.out.println(solution.reverseBits(00000010100101000001111010011100));
     }
 
     static class Solution {
