@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.binary;
 
 public class ReverseBits {
 
