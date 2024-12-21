@@ -53,7 +53,8 @@ public class MergeInterval {
             }
             res.add(new ArrayList<>(Arrays.asList(start, end)));
 
-            return res.stream().map(list -> list.stream()
+            return res.stream().map(list ->
+                    list.stream()
                             .mapToInt(Integer::intValue)
                             .toArray())
                     .toArray(int[][]::new);
