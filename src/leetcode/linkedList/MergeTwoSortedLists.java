@@ -43,7 +43,7 @@ public class MergeTwoSortedLists {
         }
     }
 
-    static public class ListNode {
+    static class ListNode {
         int val;
         RemoveNthNodeFromEndOfList.ListNode next;
 
